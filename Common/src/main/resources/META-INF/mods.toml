@@ -1,14 +1,14 @@
 modLoader="javafml"
 loaderVersion="*"
 license="All rights reserved"
-issueTrackerURL="https://github.com/ricksouth/serilum-mc-mods/labels/Mod:%20Welcome%20Message"
+issueTrackerURL="https://github.com/Serilum/.issue-tracker/labels/Mod:%20Welcome%20Message"
 logoFile="icon.png"
 
 [[mods]]
 modId="welcomemessage"
-version="2.2"
+version="2.3"
 displayName="Welcome Message"
-displayURL="https://curseforge.com/minecraft/mc-mods/welcome-message"
+displayURL="https://serilum.com/mod/welcome-message"
 authors="Rick South"
 description='''An easy to configure welcome message mod for players after login with URL support.
 '''
@@ -21,13 +21,15 @@ If you would like to contribute too, check out https://ricksouth.com/donate. App
 
 [[dependencies.welcomemessage]]
     modId="collective"
+    type="required"
     mandatory=true
-    versionRange="[7.3,)"
+    versionRange="[7.21,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.welcomemessage]]
     modId="minecraft"
+    type="required"
     mandatory=true
     versionRange="[1.20.2]"
     ordering="NONE"
