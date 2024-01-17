@@ -21,6 +21,10 @@ public class ConfigHandler extends DuskConfig {
 	@Entry public static String messageThreeText = "You should probably edit this in the config :)";
 	@Entry(min = 0, max = 15) public static int messageThreeColourIndex = 15;
 	@Entry public static String messageThreeOptionalURL = "";
+	@Entry public static String messageFourText = "You should probably edit this in the config as 4th line :)";
+	@Entry(min = 0, max = 15) public static int messageFourColourIndex = 15;
+	@Entry public static String messageFourOptionalURL = "";
+
 
 	public static void initConfig() {
 		configMetaData.put("onlyRunOnDedicatedServers", Arrays.asList(
@@ -54,6 +58,15 @@ public class ConfigHandler extends DuskConfig {
 			"0: black, 1: dark_blue, 2: dark_green, 3: dark_aqua, 4: dark_red, 5: dark_purple, 6: gold, 7: gray, 8: dark_gray, 9: blue, 10: green, 11: aqua, 12: red, 13: light_purple, 14: yellow, 15: white"
 		));
 		configMetaData.put("messageThreeOptionalURL", Arrays.asList(
+			"If a link is entered here, the complete message will be clickable."
+		));
+		configMetaData.put("messageFourText", Arrays.asList(
+			"The 4th message a player will receive when joining the world. Can be left empty."
+		));
+		configMetaData.put("messageFourColourIndex", Arrays.asList(
+			"0: black, 1: dark_blue, 2: dark_green, 3: dark_aqua, 4: dark_red, 5: dark_purple, 6: gold, 7: gray, 8: dark_gray, 9: blue, 10: green, 11: aqua, 12: red, 13: light_purple, 14: yellow, 15: white"
+		));
+		configMetaData.put("messageFourOptionalURL", Arrays.asList(
 			"If a link is entered here, the complete message will be clickable."
 		));
 
