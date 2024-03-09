@@ -1,6 +1,6 @@
 package com.natamus.welcomemessage.events;
 
-import com.natamus.collective.functions.StringFunctions;
+import com.natamus.collective.functions.MessageFunctions;
 import com.natamus.welcomemessage.config.ConfigHandler;
 import net.minecraft.ChatFormatting;
 import net.minecraft.world.entity.player.Player;
@@ -27,7 +27,7 @@ public class WorldJoinEvent {
 				return;
 			}
 			
-			StringFunctions.sendMessage(player, ConfigHandler.messageOneText, oneColour, emptyline, ConfigHandler.messageOneOptionalURL.trim());
+			MessageFunctions.sendMessage(player, ConfigHandler.messageOneText, oneColour, emptyline, ConfigHandler.messageOneOptionalURL.trim());
 			emptyline = false;
 		}
 		
@@ -38,7 +38,7 @@ public class WorldJoinEvent {
 				return;
 			}
 			
-			StringFunctions.sendMessage(player, ConfigHandler.messageTwoText, twoColour, emptyline, ConfigHandler.messageTwoOptionalURL.trim());
+			MessageFunctions.sendMessage(player, ConfigHandler.messageTwoText, twoColour, emptyline, ConfigHandler.messageTwoOptionalURL.trim());
 			emptyline = false;
 		}
 		
@@ -49,7 +49,7 @@ public class WorldJoinEvent {
 				return;
 			}
 			
-			StringFunctions.sendMessage(player, ConfigHandler.messageThreeText, threeColour, emptyline, ConfigHandler.messageThreeOptionalURL.trim());
+			MessageFunctions.sendMessage(player, ConfigHandler.messageThreeText, threeColour, emptyline, ConfigHandler.messageThreeOptionalURL.trim());
 		}
 	}
 }
