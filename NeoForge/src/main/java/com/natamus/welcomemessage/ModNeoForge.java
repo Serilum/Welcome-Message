@@ -1,6 +1,7 @@
 package com.natamus.welcomemessage;
 
 import com.natamus.collective.check.RegisterMod;
+import com.natamus.collective.check.ShouldLoadCheck;
 import com.natamus.welcomemessage.neoforge.config.IntegrateNeoForgeConfig;
 import com.natamus.welcomemessage.neoforge.events.NeoForgeWorldJoinEvent;
 import com.natamus.welcomemessage.util.Reference;
@@ -15,6 +16,10 @@ import net.neoforged.fml.javafmlmod.FMLJavaModLoadingContext;
 public class ModNeoForge {
 	
 	public ModNeoForge(IEventBus modEventBus) {
+		if (!ShouldLoadCheck.shouldLoad(Reference.MOD_ID)) {
+			return;
+		}
+
 		modEventBus.addListener(this::loadComplete);
 
 		setGlobalConstants();
