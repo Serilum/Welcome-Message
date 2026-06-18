@@ -1,27 +1,32 @@
 package com.natamus.welcomemessage.events;
 
+import com.natamus.collective.functions.ColourFunctions;
 import com.natamus.collective.functions.MessageFunctions;
 import com.natamus.welcomemessage.config.ConfigHandler;
 import net.minecraft.ChatFormatting;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 
 public class WorldJoinEvent {
-	public static void onSpawn(Level world, Player player) {
-		if (world.isClientSide()) {
+	public static void onSpawn(Level level, Player player) {
+		if (level.isClientSide()) {
 			return;
 		}
 
 		if (ConfigHandler.onlyRunOnDedicatedServers) {
-			if (!world.getServer().isDedicatedServer()) {
-				return;
+			MinecraftServer minecraftServer = level.getServer();
+			if (minecraftServer != null) {
+				if (!minecraftServer.isDedicatedServer()) {
+					return;
+				}
 			}
 		}
 		
 		boolean emptyline = ConfigHandler.sendEmptyLineBeforeFirstMessage;
 		
 		if (!ConfigHandler.messageOneText.isEmpty()) {
-			ChatFormatting oneColour = ChatFormatting.getById(ConfigHandler.messageOneColourIndex);
+			ChatFormatting oneColour = ColourFunctions.getById(ConfigHandler.messageOneColourIndex);
 			if (oneColour == null) {
 				System.out.println("[Welcome Message Error] Unable to find text formatting colour for message one with '" + ConfigHandler.messageOneColourIndex + "'.");
 				return;
@@ -32,7 +37,7 @@ public class WorldJoinEvent {
 		}
 		
 		if (!ConfigHandler.messageTwoText.isEmpty()) {
-			ChatFormatting twoColour = ChatFormatting.getById(ConfigHandler.messageTwoColourIndex);
+			ChatFormatting twoColour = ColourFunctions.getById(ConfigHandler.messageTwoColourIndex);
 			if (twoColour == null) {
 				System.out.println("[Welcome Message Error] Unable to find text formatting colour for message two with '" + ConfigHandler.messageTwoColourIndex + "'.");
 				return;
@@ -43,7 +48,7 @@ public class WorldJoinEvent {
 		}
 		
 		if (!ConfigHandler.messageThreeText.isEmpty()) {
-			ChatFormatting threeColour = ChatFormatting.getById(ConfigHandler.messageThreeColourIndex);
+			ChatFormatting threeColour = ColourFunctions.getById(ConfigHandler.messageThreeColourIndex);
 			if (threeColour == null) {
 				System.out.println("[Welcome Message Error] Unable to find text formatting colour for message three with '" + ConfigHandler.messageThreeColourIndex + "'.");
 				return;
