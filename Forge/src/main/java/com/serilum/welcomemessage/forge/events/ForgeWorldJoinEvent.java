@@ -1,6 +1,6 @@
-package com.natamus.welcomemessage.forge.events;
+package com.serilum.welcomemessage.forge.events;
 
-import com.natamus.welcomemessage.events.WorldJoinEvent;
+import com.serilum.welcomemessage.events.WorldJoinEvent;
 import net.minecraft.world.entity.player.Player;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
