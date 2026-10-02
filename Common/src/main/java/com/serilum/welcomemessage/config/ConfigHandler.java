@@ -1,7 +1,7 @@
-package com.natamus.welcomemessage.config;
+package com.serilum.welcomemessage.config;
 
 import com.natamus.collective.config.DuskConfig;
-import com.natamus.welcomemessage.util.Reference;
+import com.serilum.welcomemessage.util.Reference;
 
 import java.util.Arrays;
 import java.util.HashMap;
