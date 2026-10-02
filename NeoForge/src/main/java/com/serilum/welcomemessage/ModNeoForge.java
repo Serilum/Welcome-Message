@@ -1,10 +1,10 @@
-package com.natamus.welcomemessage;
+package com.serilum.welcomemessage;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.welcomemessage.neoforge.config.IntegrateNeoForgeConfig;
-import com.natamus.welcomemessage.neoforge.events.NeoForgeWorldJoinEvent;
-import com.natamus.welcomemessage.util.Reference;
+import com.serilum.welcomemessage.neoforge.config.IntegrateNeoForgeConfig;
+import com.serilum.welcomemessage.neoforge.events.NeoForgeWorldJoinEvent;
+import com.serilum.welcomemessage.util.Reference;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModLoadingContext;

@@ -1,7 +1,7 @@
-package com.natamus.welcomemessage.forge.config;
+package com.serilum.welcomemessage.forge.config;
 
 import com.natamus.collective.config.DuskConfig;
-import com.natamus.welcomemessage.util.Reference;
+import com.serilum.welcomemessage.util.Reference;
 import net.minecraftforge.client.ConfigScreenHandler;
 import net.minecraftforge.fml.ModLoadingContext;
 

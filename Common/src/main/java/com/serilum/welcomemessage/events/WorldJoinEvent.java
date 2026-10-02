@@ -1,8 +1,8 @@
-package com.natamus.welcomemessage.events;
+package com.serilum.welcomemessage.events;
 
 import com.natamus.collective.functions.ColourFunctions;
 import com.natamus.collective.functions.MessageFunctions;
-import com.natamus.welcomemessage.config.ConfigHandler;
+import com.serilum.welcomemessage.config.ConfigHandler;
 import net.minecraft.ChatFormatting;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.world.entity.player.Player;
