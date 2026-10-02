@@ -1,10 +1,10 @@
-package com.natamus.welcomemessage;
+package com.serilum.welcomemessage;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.welcomemessage.forge.config.IntegrateForgeConfig;
-import com.natamus.welcomemessage.forge.events.ForgeWorldJoinEvent;
-import com.natamus.welcomemessage.util.Reference;
+import com.serilum.welcomemessage.forge.config.IntegrateForgeConfig;
+import com.serilum.welcomemessage.forge.events.ForgeWorldJoinEvent;
+import com.serilum.welcomemessage.util.Reference;
 import net.minecraftforge.eventbus.api.bus.BusGroup;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
@@ -30,7 +30,7 @@ public class ModForge {
 	}
 
 	private void loadComplete(final FMLLoadCompleteEvent event) {
-    	ForgeWorldJoinEvent.registerEventsInBus();
+		ForgeWorldJoinEvent.registerEventsInBus();
 	}
 
 	private static void setGlobalConstants() {

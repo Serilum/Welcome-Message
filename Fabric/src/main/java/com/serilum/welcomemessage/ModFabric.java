@@ -1,10 +1,10 @@
-package com.natamus.welcomemessage;
+package com.serilum.welcomemessage;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
 import com.natamus.collective.fabric.callbacks.CollectivePlayerEvents;
-import com.natamus.welcomemessage.events.WorldJoinEvent;
-import com.natamus.welcomemessage.util.Reference;
+import com.serilum.welcomemessage.events.WorldJoinEvent;
+import com.serilum.welcomemessage.util.Reference;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;

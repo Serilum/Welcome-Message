@@ -1,7 +1,7 @@
-package com.natamus.welcomemessage.fabric.config;
+package com.serilum.welcomemessage.fabric.config;
 
 import com.natamus.collective.config.DuskConfig;
-import com.natamus.welcomemessage.util.Reference;
+import com.serilum.welcomemessage.util.Reference;
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;
 

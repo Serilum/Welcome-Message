@@ -1,6 +1,6 @@
-package com.natamus.welcomemessage;
+package com.serilum.welcomemessage;
 
-import com.natamus.welcomemessage.config.ConfigHandler;
+import com.serilum.welcomemessage.config.ConfigHandler;
 
 public class ModCommon {
 
